@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get("/student", async (req, res) => {
   const result = await global.connection.execute(`SELECT * FROM student`);
-  const title = [];
+  const title = [];x  
   result.metaData.forEach((item) => {
     title.push(item.name);
   });
