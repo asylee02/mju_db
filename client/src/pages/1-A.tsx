@@ -1,9 +1,8 @@
 import axios from "axios";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import TableComponent from "../components/Table";
 
 const Question1_B = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
   const [tableTitle, setTableTitle] = useState<string[]>();
   const [tableData, setTableData] = useState<string[][]>();
   const [tableName, setTableName] = useState<string>("student");
@@ -22,7 +21,7 @@ const Question1_B = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="">
       <div>
         <button
           className={button_style}
